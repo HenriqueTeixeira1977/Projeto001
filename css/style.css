@@ -9,12 +9,21 @@
 body{
     min-height: 100vh;
 }
+header{
+    z-index: 999;
+    position: fixed;
+    
+}
 
 main{
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background: url(bg.png) no-repeat;
+    background-color: aquamarine;
+    b/*ackground: url(bg.png) no-repeat;*/
     background-size: cover;
     background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

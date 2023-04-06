@@ -19,7 +19,6 @@ main{
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background-color: rgb(255, 0, 0);
 }
 header{
     z-index: 999;
@@ -32,6 +31,7 @@ header{
     align-items: center;
     padding: 20px 3%;
     transition: .3s;
+    border-bottom: orangered solid 2px;
 }
 header .brand{
     color: black;
@@ -51,7 +51,7 @@ header nav a {
     transition-property: color,;
 }
 header nav a:hover {
-    color: rgb(255, 123, 0);
+    color:orangered;
 }
 header .btn{
     color: black;
@@ -60,14 +60,21 @@ header .btn{
     display: none;
 }
 header.sticky{
-    background: #ffffff;
-    box-shadow: 5px 5px 5px 5px #0000005f;
+    background: #ffffff80;
+    box-shadow: 0px 10px 10px 0px #00000072;
 }
 header .button{
-    background: rgb(99, 99, 99);
+    background: orangered;
+    color: #000000;
+    font-weight: 600;
     padding: 5px 20px;
     border-radius: 10px;
     border: solid 3px #ffffff;    
+}
+
+header .button:hover{
+    background: #000000;
+    color: rgb(255, 255, 255);
 }
 
 main .home{background: rgb(218, 218, 218);
@@ -105,7 +112,7 @@ main .home article p{
     margin: 10px 0;
 }
 main .home article a{
-    background: #000000;
+    background: orangered;
     color: #ffffff;
     margin: 10px 0;
     padding: 5px 30px;
@@ -121,6 +128,7 @@ main .home aside {
     width: 50%;
     height: 90%;
 }
+
 /*  -----------  Section Soluções  ----------  */
 .solucoes{
     display: flex;
@@ -137,14 +145,12 @@ main .home aside {
     font-weight: 700;
 }
 .solucoes .container{
-    background: #ffffff00;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     margin: 0 3%;
     width: 100%;
-    height: 500px;
 }
 .solucoes .container .box{
     background: #f3f3f3;
@@ -152,10 +158,10 @@ main .home aside {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 50px;
+    margin: 10px;
     padding: 20px;
     width: 70%;
-    height: 70%;
+    height: 450px;
     text-align: center;
     border-radius: 20px;
     box-shadow: 5px 5px 5px 5px #00000033; 
@@ -173,10 +179,10 @@ main .home aside {
     margin: 20px 0;
 }
 .solucoes .container .box a {
-    background: #000000;
+    background: orangered;
     color: #ffffff;
     margin: 20px 0px;
-    padding: 5px 30px;
+    padding: 5px 5 0px;
     border: #ffffff solid 3px;
     border-radius: 5px;
 }
@@ -187,7 +193,7 @@ main .home aside {
 
 
 
-
+/*  -----------  Section Sobre  ----------  */
 main .sobre{background: rgb(59, 59, 59);
     display: flex;
     justify-content: center;
@@ -198,6 +204,7 @@ main .sobre{background: rgb(59, 59, 59);
     height: 100vh;
     padding: 100px 20px;
 }
+/*  -----------  Section Contatos  ----------  */
 main .contatos{background: rgb(15, 15, 15);
     display: flex;
     justify-content: center;
@@ -208,7 +215,7 @@ main .contatos{background: rgb(15, 15, 15);
     height: 100vh;
     padding: 100px 20px;
 }
-
+/*  -----------  Section Footer  ----------  */
 footer{
     display: flex;
     justify-content: center;

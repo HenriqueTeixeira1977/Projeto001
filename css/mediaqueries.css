@@ -15,7 +15,7 @@
         height: 100vh;
         top: 0;
         right: -100%;
-        padding: 80px 50px;
+        padding: 80px 20px;
         transition:  0.5s;
         transition-property: right;
     }
@@ -34,6 +34,31 @@
         margin: 20px;
         padding: 0 15px;
     }
+    header .button {
+        display: none;
+    }
+
+    main .home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    main .home article {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        padding: 5px;
+    }
+    main .home aside {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
 
 
 

@@ -10,9 +10,16 @@
     text-decoration: none;
     list-style: none;
     scroll-behavior: smooth;
+    transition: all .3s ease;
 }
 body{
     min-height: 100vh;
+}
+main{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(255, 0, 0);
 }
 header{
     z-index: 999;
@@ -23,7 +30,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 100px;
+    padding: 20px 3%;
     transition: .3s;
 }
 header .brand{
@@ -46,22 +53,21 @@ header nav a {
 header nav a:hover {
     color: rgb(255, 123, 0);
 }
-    main{
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    background-color: rgb(255, 0, 0);
-}
 header .btn{
     color: black;
     font-size: 25px;
     cursor: pointer;
     display: none;
 }
-
 header.sticky{
     background: #ffffff;
     box-shadow: 5px 5px 5px 5px #0000005f;
+}
+header .button{
+    background: rgb(99, 99, 99);
+    padding: 5px 20px;
+    border-radius: 10px;
+    border: solid 3px #ffffff;    
 }
 
 main .home{background: rgb(218, 218, 218);
@@ -71,11 +77,56 @@ main .home{background: rgb(218, 218, 218);
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
     height: 100vh;
-    padding: 100px 20px;
+    padding: 100px 7%;
 }
+main .home article { /*background: rgb(78, 78, 78);*/
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 50%;
+    height: 90%;
+}
+main .home article h1{
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 40px;
+}
+main .home article h2{
+    font-size: 20px;
+}
+main .home article h3{
+    font-size: 30px;
+}
+
+main .home article p{
+    margin: 10px 0;
+}
+main .home article a{
+    background: #000000;
+    color: #ffffff;
+    margin: 10px 0;
+    padding: 5px 30px;
+    border: #ffffff solid 3px;
+    border-radius: 5px;
+
+}
+
+
+main .home aside {
+    background: rgb(176, 176, 176);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 90%;
+}
+
+
+
 main .solucoes{background: rgb(117, 117, 117);
     display: flex;
     justify-content: center;

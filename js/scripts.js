@@ -5,8 +5,6 @@ window.addEventListener("scroll", function(){
 	header.classList.toggle('sticky', window.scrollY > 0);
 });
 
-
-
 //Script para Navigation sidebar menu responsivo
 
 var menu = document.querySelector('.menu');

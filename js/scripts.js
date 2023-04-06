@@ -5,6 +5,8 @@ window.addEventListener("scroll", function(){
 	header.classList.toggle('sticky', window.scrollY > 0);
 });
 
+
+
 //Script para Navigation sidebar menu responsivo
 
 var menu = document.querySelector('.menu');
@@ -16,5 +18,5 @@ menuBtn.addEventListener("click", () => {
 });
 
 closeBtn.addEventListener("click", () => {
-	menu.classList.add('active');
+	menu.classList.remove('active');
 });

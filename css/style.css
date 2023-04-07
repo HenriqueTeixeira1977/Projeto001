@@ -76,8 +76,11 @@ header .button:hover{
     color: rgb(255, 255, 255);
 }
 
+/*
 /*  -----------  Section Home  ----------  */
 .home{background: rgb(218, 218, 218);
+*/
+/*  ----------  Section Main Home  ---------- */ 
     /*background: url(bg.png) no-repeat;*/
     background-size: cover;
     background-position: center;
@@ -129,7 +132,7 @@ header .button:hover{
 }
 
 /*  -----------  Section Soluções  ----------  */
-.solucoes{
+.solucoes{background: rgb(117, 117, 117);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -185,7 +188,6 @@ header .button:hover{
     border: #ffffff solid 3px;
     border-radius: 10px;
 }
-
 /*  -----------  Section Sobre  ----------  */
 .sobre{
     display: flex;

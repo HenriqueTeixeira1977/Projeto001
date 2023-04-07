@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 0px) and (max-width: 1023px){
+/*  ----------  Section Header  ---------- */ 
     header .btn {
         display: block;
     }
@@ -38,6 +39,8 @@
         display: none;
     }
 
+/*  ----------  Section Main Home  ---------- */ 
+
     main .home {
         display: flex;
         justify-content: center;
@@ -58,6 +61,7 @@
         align-items: center;
         width: 100%;
     }
+
 
     /*  -----------  Section Soluções  ----------  */
     .solucoes {

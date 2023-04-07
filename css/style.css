@@ -60,12 +60,12 @@ header .btn{
     display: none;
 }
 header.sticky{
-    background: #ffffff80;
+    background: #ffffff;
     box-shadow: 0px 10px 10px 0px #00000072;
 }
 header .button{
     background: orangered;
-    color: #000000;
+    color: #ffffff;
     font-weight: 600;
     padding: 5px 20px;
     border-radius: 10px;
@@ -76,8 +76,11 @@ header .button:hover{
     color: rgb(255, 255, 255);
 }
 
+/*
+/*  -----------  Section Home  ----------  */
+.home{background: rgb(218, 218, 218);
+*/
 /*  ----------  Section Main Home  ---------- */ 
-main .home{background: rgb(218, 218, 218);
     /*background: url(bg.png) no-repeat;*/
     background-size: cover;
     background-position: center;
@@ -89,7 +92,7 @@ main .home{background: rgb(218, 218, 218);
     height: 100vh;
     padding: 100px 7%;
 }
-main .home article { /*background: rgb(78, 78, 78);*/
+.home article { /*background: rgb(78, 78, 78);*/
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -97,29 +100,29 @@ main .home article { /*background: rgb(78, 78, 78);*/
     width: 50%;
     height: 90%;
 }
-main .home article h1{
+.home article h1{
     font-size: 50px;
     font-weight: 800;
     line-height: 40px;
 }
-main .home article h2{
+.home article h2{
     font-size: 20px;
 }
-main .home article h3{
+.home article h3{
     font-size: 30px;
 }
-main .home article p{
+.home article p{
     margin: 10px 0;
 }
-main .home article a{
+.home article a{
     background: orangered;
     color: #ffffff;
     margin: 10px 0;
-    padding: 5px 30px;
+    padding: 5px 50px;
     border: #ffffff solid 3px;
-    border-radius: 5px;
+    border-radius: 10px;
 }
-main .home aside {
+.home aside {
     background: rgb(176, 176, 176);
     display: flex;
     justify-content: center;
@@ -157,9 +160,9 @@ main .home aside {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 10px;
+    margin: 30px;
     padding: 20px;
-    width: 70%;
+    width: 400px;
     height: 450px;
     text-align: center;
     border-radius: 20px;
@@ -183,19 +186,63 @@ main .home aside {
     margin: 20px 0px;
     padding: 5px 50px;
     border: #ffffff solid 3px;
-    border-radius: 5px;
+    border-radius: 10px;
 }
-
-
 /*  -----------  Section Sobre  ----------  */
-main .sobre{background: rgb(59, 59, 59);
+.sobre{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 100%;
     height: 100vh;
-    padding: 100px 20px;
+    padding: 100px 0 5px 0;
+}
+.sobre h2{
+    margin: 0 0 0 0;
+    font-size: 50px;
+    font-weight: 700;
+}
+.sobre .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 5%;
+}
+.sobre article{background: rgb(245, 245, 245);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 95%;
+    padding: 0px;    
+}
+
+.sobre aside{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 50%;
+    height: 95%;
+    padding: 30px;
+    text-align: right;
+}
+.sobre aside h2{
+    font-size: 2rem;
+    font-weight: 800;
+}
+.sobre aside p{
+    margin: 20px 0;
+}
+.sobre aside a{
+    background: orangered;
+    color: #ffffff;
+    margin: 20px 0px;
+    padding: 5px 50px;
+    border: #ffffff solid 3px;
+    border-radius: 10px;
 }
 /*  -----------  Section Contatos  ----------  */
 main .contatos{background: rgb(15, 15, 15);

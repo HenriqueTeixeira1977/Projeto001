@@ -76,6 +76,7 @@ header .button:hover{
     color: rgb(255, 255, 255);
 }
 
+
 /*  -----------  Section Home  ----------  */
 .home{background: rgb(255, 255, 255);
     /*background: url(bg.png) no-repeat;*/
@@ -186,7 +187,6 @@ header .button:hover{
     border: #ffffff solid 3px;
     border-radius: 10px;
 }
-
 /*  -----------  Section Sobre  ----------  */
 .sobre{
     display: flex;

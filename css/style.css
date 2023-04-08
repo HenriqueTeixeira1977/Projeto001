@@ -31,7 +31,6 @@ header{
     align-items: center;
     padding: 20px 3%;
     transition: .3s;
-    border-bottom: orangered solid 2px;
 }
 header .brand{
     color: black;
@@ -60,11 +59,13 @@ header .btn{
     display: none;
 }
 header.sticky{
-    background: #ffffffcd;
+    background: #ffffff;
     box-shadow: 0px 10px 10px 0px #00000072;
+    border-bottom: orangered solid 5px;
+
 }
 header .button{
-    background: orangered;
+    background: #29A71A;
     color: #ffffff;
     font-weight: 600;
     padding: 5px 20px;
@@ -72,9 +73,10 @@ header .button{
     border: solid 3px #ffffff;    
 }
 header .button:hover{
-    background: #000000;
+    background: orangered;
     color: rgb(255, 255, 255);
 }
+
 /*  -----------  Section Home  ----------  */
 .home{background: rgb(255, 255, 255);
     /*background: url(bg.png) no-repeat;*/
@@ -227,6 +229,9 @@ header .button:hover{
     padding: 30px;
     text-align: right;
 }
+.sobre aside h3{
+    color: orangered;
+}
 .sobre aside h2{
     font-size: 2rem;
     font-weight: 800;
@@ -244,7 +249,7 @@ header .button:hover{
 }
 
 /*  -----------  Section Contatos  ----------  */
-.contatos{
+.contatos{background: #e7e7e7;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -259,7 +264,7 @@ header .button:hover{
     align-items: center;
     flex-direction: row;
     width: 100%;
-    height: 500px;
+    height: 600px;
     padding: 0px 5%;
 }
 .contatos article{ 
@@ -270,25 +275,46 @@ header .button:hover{
     width: 50%;    
     height: 500px;
 }
+.contatos h2{
+    font-size: 2rem;
+    color: orangered;
+}
 .contatos article p{
-    padding: 20px 0;
+    margin: 20px 0;
+    padding: 0px 0;
 }
 .contatos article a{
-    background: orangered;
-    color: #ffffff;
-    margin: 20px 0px;
-    padding: 5px 50px;
-    border: #ffffff solid 3px;
+    color: #000000;
+    margin: 0px 0px;
+    padding: 5px 1  px;
     border-radius: 10px;
 }
-.contatos aside{
+.contatos .whatsapp {
+    width: 90%;
+    margin: 20px 0;
+    padding: 10px;
+    background: #29A71A;
+    font-size: 30px;
+    text-align: center;
+    color: #fdfdfd;
+    border: rgb(255, 255, 255) solid 3px;
+}
+.contatos .whatsapp:hover{
+    background: #239217;
+}
+.contatos aside{ 
     display: flex;
     justify-content: center;
     align-items: center; 
     flex-direction: column;
-    width: 50%;    
-    height: 500px;
+    width: 90%;    
+    height: 90%;
 }
+.contatos aside iframe{
+    width: 100%;
+    margin: 20px 0;
+}
+
 
 /*  -----------  Section Footer  ----------  */
 footer{
@@ -300,11 +326,11 @@ footer{
     height: 150px;
     padding: 20px 20px;
     background: #000000;
-    color: #ffffff;
+    color: #e7e7e7;
 }
 footer a {
     color: orangered;
 }
 footer a:hover {
-    color: rgb(255, 255, 255);
+    color: rgba(255, 68, 0, 0.774);
 }

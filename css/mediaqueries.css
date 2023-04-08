@@ -6,7 +6,7 @@
     }
     header nav{
         position: fixed;
-        background: rgba(255, 68, 0, 0.836);
+        background: rgba(255, 68, 0, 0.941);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -34,9 +34,14 @@
         margin: 20px;
         padding: 0 15px;
     }
+    header nav a:hover{
+        color: white;
+    }
     header .button {
         display: none;
     }
+    
+    /*  -----------  Section Home  ----------  */
 
     main .home {
         display: flex;

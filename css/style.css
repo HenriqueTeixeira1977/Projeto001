@@ -75,8 +75,6 @@ header .button:hover{
     background: #000000;
     color: rgb(255, 255, 255);
 }
-
-
 /*  -----------  Section Home  ----------  */
 .home{background: rgb(255, 255, 255);
     /*background: url(bg.png) no-repeat;*/
@@ -131,7 +129,7 @@ header .button:hover{
 }
 
 /*  -----------  Section Soluções  ----------  */
-.solucoes{background: green;
+.solucoes{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -187,6 +185,7 @@ header .button:hover{
     border: #ffffff solid 3px;
     border-radius: 10px;
 }
+
 /*  -----------  Section Sobre  ----------  */
 .sobre{
     display: flex;
@@ -243,26 +242,27 @@ header .button:hover{
     border: #ffffff solid 3px;
     border-radius: 10px;
 }
+
 /*  -----------  Section Contatos  ----------  */
-.contatos{ background: rebeccapurple;
+.contatos{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     width: 100%;
-    height: 10h;
-    padding: 100px 20px;
+    height: 100vh;
+    padding: 110px 0 0 0;
 }
-.contatos .container{background: yellowgreen;
+.contatos .container{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     width: 100%;
-    height: 800px;
-    padding: 0px 0%;
+    height: 500px;
+    padding: 0px 5%;
 }
-.contatos article{background: red;
+.contatos article{ 
     display: flex;
     justify-content: center;
     align-items: flex-start; 
@@ -270,15 +270,26 @@ header .button:hover{
     width: 50%;    
     height: 500px;
 }
-.contatos aside{background: yellow;
+.contatos article p{
+    padding: 20px 0;
+}
+.contatos article a{
+    background: orangered;
+    color: #ffffff;
+    margin: 20px 0px;
+    padding: 5px 50px;
+    border: #ffffff solid 3px;
+    border-radius: 10px;
+}
+.contatos aside{
     display: flex;
     justify-content: center;
     align-items: center; 
     flex-direction: column;
     width: 50%;    
     height: 500px;
-
 }
+
 /*  -----------  Section Footer  ----------  */
 footer{
     display: flex;
@@ -286,6 +297,9 @@ footer{
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: 50vh;
-    padding: 100px 20px;
+    height: 150px;
+    padding: 20px 20px;
+
+    background: #000000;
+    color: #ffffff;
 }

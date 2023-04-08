@@ -140,9 +140,11 @@
         height: 90%;
         text-align: center;
     }
-
     .contatos article p{
         padding: 0px 0;
+    }
+    .contatos .whatsapp {
+        font-size: 20px;
     }
     .contatos aside iframe{
         width: 100%;

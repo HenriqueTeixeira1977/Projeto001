@@ -12,7 +12,7 @@
     scroll-behavior: smooth;
     transition: all .45s ease;
 }
-body{
+body .container{
     background-image: url(../img/bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -27,9 +27,17 @@ body{
     text-align: center;
 }
 h1{
-    font-size: normal;
-    font-size: 60px;
-    margin: -150px 0 40px;
+    font-size: 5rem;
+    color: #ffffff;
+    text-shadow: 5px 5px 5px #000000;
+    margin: 0;
+}
+h2{
+    font-size: 3rem;
+    color: #ffffff;
+    text-shadow: 5px 5px 5px #000000;
+    margin: 0;
+
 }
 .countdown{
     display: flex;
@@ -44,38 +52,51 @@ h1{
     margin: 15px;
 }
 .time h2{
+    color: orangered;
     font-weight: bold;
-    font-size: 36px;
+    font-size: 3rem;
     line-height: 1;
-    margin: 0 0 5px;   
+    text-shadow: 5px 5px 5px #000000;
+    margin: 0 0 0px;   
+}
+.time small{
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-shadow: 5px 5px 5px #000000;
 }
 a{
     font-size: 20px;
+    text-transform: uppercase;
     color: aliceblue;
     background: orangered;
     padding: 7px 50px;
     border-radius: 10px;
+    border: #ffffff solid 2px;
 }
+a:hover{
+    background: rgb(225, 61, 1);
+}
+
+/*  ---------- Responsive ----------  */
 @media (max-width: 1023px) {
     h1 {
-        font-size: 45px;
+        font-size: 4rem;
+        margin: 0;
     }
     .time{
         margin: 5px;
     }
     .time h2{
-        font-size: 12px;
+        font-size: 2rem;
     }
     .time small {
         font-size: 10px;
     }
-
     a{
         font-size: 20px;
         color: aliceblue;
         background: orangered;
         padding: 7px 50px;
         border-radius: 10px;
-
     }
 }

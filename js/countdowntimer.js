@@ -1,27 +1,23 @@
-const days = document.getElementById('days');
-const hours = document.getElementById('hours');
-const minutes = document.getElementById('minutes');
-const seconds = document.getElementById('seconds');
+const launchDate = new Date("2023-05-05T00:00:00"); //  aqui posso alterar o data final;
 
-const currentYear = new Date().getFullYear();
-
-const newYearTime = new Date(`January 01 $ {currentYear + 1} 00:00:00`);
-
-//  Update countdown time
-
-function updateCountdown() {
-    const currentTime = new Date();
-    const diff = newYearTime - currentTime;
-
-    const d = Math.floor(diff / 1000 / 60 / 60 / 24);
-    const h = Math.floor(diff / 1000 / 60 / 60) % 24;
-    const m = Math.floor(diff / 1000 / 60) % 60;
-    const s = Math.floor(diff / 1000) % 60;
-
-    days.innerHTML = d;
-    hours.innerHTML = h < 10 ? '0' + h : h;
-    minutes.innerHTML = m < 10 ? '0' + m : m;
-    seconds.innerHTML = s < 10 ? '0' + s : s;
+function countdown() {
+  const currentDate = new Date();
+ 
+  const difference = launchDate.getTime() - currentDate.getTime();
+  
+  const totalSeconds = Math.floor(difference / 1000);
+  
+  const days = Math.floor(totalSeconds / (24 * 60 * 60));
+  const hours = Math.floor((totalSeconds % (24 * 60 * 60)) / (60 * 60));
+  const minutes = Math.floor((totalSeconds % (60 * 60)) / 60);
+  const seconds = Math.floor(totalSeconds % 60);
+  
+  document.getElementById("days").innerText = days;
+  document.getElementById("hours").innerText = hours < 10 ? '0' + hours : hours;
+  document.getElementById("minutes").innerText = minutes < 10 ? '0' + minutes : minutes;
+  document.getElementById("seconds").innerText = seconds < 10 ? '0' + seconds : seconds;
 }
 
-setInterval(updateCountdown, 1000);
+countdown();
+
+setInterval(countdown, 1000);

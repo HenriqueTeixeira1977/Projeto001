@@ -68,7 +68,7 @@
     }
 
 /*  -----------  Section Soluções  ----------  */
-    .solucoes { background: red;
+    .solucoes {
         display: flex;
         justify-content: center;
         align-items: center;

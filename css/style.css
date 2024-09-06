@@ -19,7 +19,6 @@ main{
     position: relative;
     width: 100%;
     min-height: 100vh;
-    max-width: 1320px;
     margin: auto;
 
 }
@@ -80,7 +79,7 @@ header .button:hover{
 }
 
 /*  -----------  Section Home  ----------  */
-.home{background: rgb(255, 255, 255);
+.home{background: rgba(255, 0, 0, 0);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -89,8 +88,7 @@ header .button:hover{
     flex-direction: row;
     width: 100%;
     height: 100vh;
-    max-width: 1300px;
-
+    max-width: 1200px;
     margin: auto;
     padding: 100px 0 0 0;
 }
@@ -126,13 +124,21 @@ header .button:hover{
     border-radius: 10px;
 }
 .home aside {
-    background:orangered;
+    background:rgba(255, 68, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    height: 90%;
+    width: 30%;
+    height: 500px;
     border-radius: 20px;
+}
+.home aside iframe{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 /*  -----------  Section Soluções  ----------  */
@@ -193,11 +199,10 @@ header .button:hover{
 }
 
 /*  -----------  Section Sobre  ----------  */
-.sobre{
+.sobre{background-color: #23921700;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     width: 100%;
     height: 100vh;
     padding: 100px 0 0 0;
@@ -207,27 +212,30 @@ header .button:hover{
     font-size: 50px;
     font-weight: 700;
 }
-.sobre .container {
+.sobre .container {background-color: rgba(242, 255, 0, 0);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: 100%;
-    padding: 0 5%;
+    width: 85%;
+
 }
-.sobre article{background:orangered;
+.sobre article{background:rgba(255, 68, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
     width: 50%;
-    height: 95%;
-    padding: 0px;
-    border-radius: 20px;    
+    height: 100%;
+    padding: 10px;
 }
-.sobre aside{
+.sobre article iframe{background-color: rgba(34, 255, 0, 0);
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+}
+.sobre aside{background-color: rgba(238, 130, 238, 0);
     width: 50%;
     height: 95%;
     padding: 30px;
@@ -259,7 +267,6 @@ header .button:hover{
     align-items: center;
     flex-direction: row;
     width: 100%;
-    height: 100vh;
     padding: 110px 0 0 0;
 }
 .contatos .container{
@@ -267,7 +274,7 @@ header .button:hover{
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    width: 100%;
+    width: 85%;
     height: 600px;
     padding: 0px 0;
 }

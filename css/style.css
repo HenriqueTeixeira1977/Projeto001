@@ -15,13 +15,7 @@
 body{
     min-height: 100vh;
 }
-main{
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    margin: auto;
 
-}
 header{
     z-index: 999;
     position: fixed;
@@ -35,8 +29,8 @@ header{
     transition: .3s;
 }
 header .brand{
-    color: black;
-    font-size: 30px;
+    color: orangered;
+    font-size: 2.5rem;
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
@@ -70,8 +64,8 @@ header .button{
     color: #ffffff;
     font-weight: 600;
     padding: 5px 20px;
-    border-radius: 10px;
-    border: solid 3px #ffffff;    
+    border-radius: 5px;
+    border: solid 2px #ffffff;    
 }
 header .button:hover{
     background: orangered;
@@ -79,7 +73,8 @@ header .button:hover{
 }
 
 /*  -----------  Section Home  ----------  */
-.home{background: rgba(255, 0, 0, 0);
+.home{background: rgb(0, 162, 255);
+    background-image: url(../img/bg.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -88,34 +83,47 @@ header .button:hover{
     flex-direction: row;
     width: 100%;
     height: 100vh;
-    max-width: 1200px;
     margin: auto;
-    padding: 100px 0 0 0;
 }
-.home article { /*background: rgb(78, 78, 78);*/
+main .home .container{
+    background-color: rgba(37, 10, 0, 0.358);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 85%;
+    max-width: 1400px;
+    height: 500px;
+    margin: auto;
+    padding: 20px;
+    border: rgba(255, 68, 0, 0) solid 3px;
+}
+.home .container article { background: rgba(78, 78, 78, 0);
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
     width: 50%;
-    height: 90%;
-    margin: 10px;
+    height: 100%;
+    color: white;
 }
-.home article h1{
+.home .container article h1{
     font-size: 50px;
     font-weight: 800;
     line-height: 40px;
+    color: orangered;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.392);
 }
-.home article h2{
+.home .container article h2{
     font-size: 20px;
 }
-.home article h3{
+.home .container article h3{
     font-size: 30px;
 }
-.home article p{
+.home .container article p{
     margin: 10px 0;
 }
-.home article a{
+.home .container article a{
     background: orangered;
     color: #ffffff;
     margin: 10px 0;
@@ -123,22 +131,20 @@ header .button:hover{
     border: #ffffff solid 3px;
     border-radius: 10px;
 }
-.home aside {
-    background:rgba(255, 68, 0, 0);
+.home .container aside {background:rgba(255, 68, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30%;
-    height: 500px;
-    border-radius: 20px;
-}
-.home aside iframe{
-    width: 100%;
+    width: 50%;
     height: 100%;
+}
+.home .container aside iframe{background-color: rgba(255, 238, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
-
+    border-radius: 5px;
+    width: 70%;
+    height: 100%;
 }
 
 /*  -----------  Section Soluções  ----------  */

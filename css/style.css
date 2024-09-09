@@ -359,8 +359,9 @@ main .home .container{
     width: 50%;    
     height: 90%;
 }
-.contatos aside iframe{
-    width: 100%;
+.contatos aside form{background-color: gray;
+    width: 300px;
+    
     margin: 20px 0;
 }
 /*  -----------  Section Mapa  ----------  */

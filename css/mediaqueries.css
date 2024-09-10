@@ -4,10 +4,14 @@
 /*  ----------  Section Header  ---------- */ 
     header .btn {
         display: block;
+        color: white;
+    }
+    header.sticky .btn {
+        color: orangered;
     }
     header nav{
         position: fixed;
-        background: rgba(255, 255, 255, 0.882);
+        background: rgba(255, 255, 255, 0.921);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -26,14 +30,22 @@
     header .menu .close-btn{
         position: absolute;
         top: 0;
-        left: 93%;
-        margin: 30px 0px 0px 0px;
+        left: 87%;
+        margin: 15px 0px 0px 0px;
+        padding: 10px 12px;
+        background-color: black;
+        border: orangered solid 1px;
+        border-radius: 7px;
     }
     header nav a{
         display: block;
         font-size: 20px;
         margin: 20px;
         padding: 0 15px;
+        font-size: 2rem;
+        font-weight: 400;
+        color: black;
+        text-shadow: 3px 3px 3px rgba(78, 78, 78, 0.622);
     }
     header nav a:hover{
         color: orangered;
@@ -48,111 +60,184 @@
         justify-content: center;
         align-items: center;
         flex-direction: column-reverse;
-        width: 90%;
+        width: 100%;
         margin: auto;
-
     }
-    main .home article {
+    main .home .container {background-color: rgba(255, 255, 0, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 85%;
+        max-width: 700px;
+        height: 85%;
+        text-align: left;
+    }
+    main .home .container article {background-color: rgba(255, 0, 0, 0);
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
-        text-align: center;
+        height: 90%;
     }
-    main .home aside {
+    main .home .container article h1{background-color: rgba(255, 255, 255, 0);
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        font-size: 4rem;
+        line-height: 0.8;
+    }
+    main .home .container article h2{background-color: rgba(255, 255, 255, 0);
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        font-size: 1.5rem;
+        color: rgb(255, 255, 255);
+    }
+    main .home .container article h3{background-color: rgba(255, 255, 255, 0);
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        font-size: 2rem;
+        color: rgb(255, 255, 255);
+    }
+    main .home .container article .button{background-color: rgba(255, 68, 0, 0);
+        display: flex;
+        align-items: flex-start;
+        justify-content: left;
+        width: 100%;
+        padding: 10px 0;
+    }
+    main .home .container article a{background-color: rgb(255, 68, 0);
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        width: 100%;
+        max-width: 400px;
+        padding: 10px 0;
+    }
+    main .home .container aside {background-color: rgba(13, 0, 255, 0);
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
         width: 100%;
-
+        height: 5%;
+        text-align: left;
     }
 
 /*  -----------  Section Soluções  ----------  */
-    .solucoes {
+    main .solucoes {background-color: rgba(255, 0, 0, 0);
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         flex-direction: column;
         width: 100%;
-        margin: 0;
+        height: 1100px;
+        margin: auto;
+        padding: 100px 0;
     }
-    .solucoes h2{
+    main .solucoes h2{
         margin: 100px 0px 0px 0px;
         font-size: 50px;
         line-height: 0px;
         text-align: center;
     }
-    .solucoes .container {
-        flex-direction: column;
+    main .solucoes .container {background-color: rgba(0, 255, 255, 0);
+        flex-wrap: wrap;
         width: 95%;
-        height: 90vh;
     }
-    .solucoes .container .box{
+    main .solucoes .container .box{
         width: 90%;
+        max-width: 350px;
         height: 300px;
         margin-bottom: 10px;
         padding: 0 40px;
         transition: all .3s ease;
     }
-    .solucoes .container .box i{
+    main .solucoes .container .box i{
         font-size: 50px;
         margin: 0px;
     }
-    .solucoes .container .box h3{
+    main .solucoes .container .box h3{
         font-size: 1.2em;
         margin: 0px;
     }
-    .solucoes .container .box p{
+    main .solucoes .container .box p{
         font-size: .8em;
         margin: 0px;
     }
-    .solucoes .container .box a{
+    main .solucoes .container .box a{
         margin: 20px 0px 0px 0px;
         padding: 5px 50px;
     }
 /*  -----------  Section Sobre  ----------  */
-    .sobre .container{
-        flex-direction: column;
-        height: 100vh;
-        padding: 0;
+    main .sobre{background-color: rgba(0, 0, 255, 0);
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 100px;
+        height: 1300px;
     }
-    .sobre article {
+    main .sobre .container{background-color: rgba(137, 43, 226, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    main .sobre article {background-color: rgba(0, 128, 0, 0);
         width: 95%;
     }
-    .sobre aside{
+    main .sobre aside{background-color: rgba(165, 42, 42, 0);
         width: 95%;
         align-items: center;
         text-align: center;
     }
 
 /*  -----------  Section Contatos  ----------  */
-    .contatos{
+    main .contatos{background-color: rgba(127, 255, 212, 0);
         display: flex;
-        text-align: center;
+        justify-content: center;
+        align-items: flex-start;
+        height: 1250px;
     }
-    .contatos .container{
+    main .contatos .container{background-color: rgba(137, 43, 226, 0);
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
-        height: 90%;
+        flex-wrap: wrap;
+        width: 95%;
         text-align: center;
     }
-    .contatos .container article{ 
+    main .contatos .container article{ background-color: rgba(51, 0, 255, 0);
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
-        height: 90%;
-        text-align: center;
+        margin: auto;
+        width: 90%;
     }
-    .contatos article p{
+    main .contatos .container article .ctt-txt{background-color: rgba(204, 255, 0, 0);
+        height: 98%;
+        padding: 20px;
+        text-align: left;
+    }
+    main .contatos .container article p{
         padding: 0px 0;
     }
-    .contatos .whatsapp {
-        font-size: 20px;
+    main .contatos .container .whatsapp {background-color: rgba(255, 0, 0, 0);
+        width: 100%;
+        padding: 20px 0%;
+        font-size: 1rem;border: none;
     }
-    .contatos aside iframe{
+    main .contatos .container .whatsapp a{background-color: green;
+        width: 100%;
+        padding: 15px 50px;
+        font-size: 1rem;color: white;
+    }
+    main .contatos aside{background-color: rgba(255, 0, 0, 0);
         width: 100%;
         margin: 20px 0;
     } 

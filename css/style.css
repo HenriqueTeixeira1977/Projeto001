@@ -100,7 +100,7 @@ header.sticky .button:hover{
 }
 
 /*  -----------  Section Home  ----------  */
-.home{background: rgb(255, 0, 0);
+main .home{background: rgb(255, 0, 0);
     background-image: linear-gradient(-45deg, rgba(255, 68, 0, 0.382) 10%, rgba(0, 0, 0, 0.842) 64%),url(../img/bg.jpg);
     background-size: cover;
     background-position: center;
@@ -128,7 +128,7 @@ main .home .container{
     border-radius: 10px;
 
 }
-.home .container article { background: rgba(0, 0, 0, 0);
+main .home .container article { background: rgba(0, 0, 0, 0);
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -137,39 +137,48 @@ main .home .container{
     height: 100%;
     color: white;
 }
-.home .container article h1{
+main .home .container article h1{
     font-size: 4.7rem;
     font-weight: 800;
     line-height: 0.7;
     color: orangered;
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.392);
 }
-.home .container article h2{
+main .home .container article h2{
     font-size: 2rem;
 }
-.home .container article h3{
+main .home .container article h3{
     font-size: 3rem;
 }
-.home .container article p{
+main .home .container article p{
     margin: 10px 0;
     font-size: 1.3rem;
 }
-.home .container article a{
+main .home .container article .button{background: rgba(15, 11, 10, 0);
+    color: #ffffff;
+    width: 100%;
+    margin: 10px 0;
+    padding: 20px 0px;
+}
+main .home .container article a{
     background: orangered;
     color: #ffffff;
     margin: 10px 0;
-    padding: 5px 50px;
-    border: #ffffff solid 3px;
+    padding: 15px 70px;
+    border: #ffffff solid 2px;
     border-radius: 10px;
 }
-.home .container aside {background:rgba(255, 68, 0, 0);
+main .home .container article a:hover{
+    background-color: rgb(208, 55, 0);
+}
+main .home .container aside {background:rgba(255, 68, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
     width: 50%;
     height: 100%;
 }
-.home .container aside iframe{background-color: rgba(255, 238, 0, 0);
+main .home .container aside iframe{background-color: rgba(255, 238, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -179,7 +188,7 @@ main .home .container{
 }
 
 /*  -----------  Section Soluções  ----------  */
-.solucoes{
+main .solucoes{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -187,26 +196,26 @@ main .home .container{
     width: 100%;
     height: 100vh;
 }
-.solucoes h2{
+main .solucoes h2{
     margin: 100px 0 50px 0;
     font-size: 50px;
     font-weight: 700;
 }
-.solucoes .container{
+main .solucoes .container{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-wrap: wrap;
     margin: 0 3%;
     width: 100%;
 }
-.solucoes .container .box{
+main .solucoes .container .box{
     background: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 30px;
+    margin: 10px;
     padding: 20px;
     width: 400px;
     height: 450px;
@@ -214,19 +223,19 @@ main .home .container{
     border-radius: 20px;
     box-shadow: 5px 5px 5px 5px #00000033; 
 }
-.solucoes .container .box i{
+main .solucoes .container .box i{
     font-size: 70px;
     margin: 20px;
     color: orangered;
 }
-.solucoes .container .box h3{
+main .solucoes .container .box h3{
     font-size: 30px;
 }
-.solucoes .container .box p {
+main .solucoes .container .box p {
     font-size: 1rem;
     margin: 20px 0;
 }
-.solucoes .container .box a {
+main .solucoes .container .box a {
     background: orangered;
     color: #ffffff;
     margin: 20px 0px;
@@ -236,7 +245,7 @@ main .home .container{
 }
 
 /*  -----------  Section Sobre  ----------  */
-.sobre{background-color: #23921700;
+main .sobre{background-color: #23921700;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -244,19 +253,18 @@ main .home .container{
     height: 100vh;
     padding: 100px 0 0 0;
 }
-.sobre h2{
+main .sobre h2{
     margin: 0 0 0 0;
     font-size: 50px;
     font-weight: 700;
 }
-.sobre .container {background-color: rgba(242, 255, 0, 0);
+main .sobre .container {background-color: rgba(242, 255, 0, 0);
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 85%;
-
 }
-.sobre article{background:rgba(255, 68, 0, 0);
+main .sobre article{background:rgba(255, 68, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -264,7 +272,7 @@ main .home .container{
     height: 100%;
     padding: 10px;
 }
-.sobre article iframe{background-color: rgba(34, 255, 0, 0);
+main .sobre article iframe{background-color: rgba(34, 255, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -272,23 +280,23 @@ main .home .container{
     height: 500px;
     border-radius: 10px;
 }
-.sobre aside{background-color: rgba(238, 130, 238, 0);
+main .sobre aside{background-color: rgba(238, 130, 238, 0);
     width: 50%;
     height: 95%;
     padding: 30px;
     text-align: right;
 }
-.sobre aside h3{
+main .sobre aside h3{
     color: orangered;
 }
-.sobre aside h2{
+main .sobre aside h2{
     font-size: 2rem;
     font-weight: 800;
 }
-.sobre aside p{
+main .sobre aside p{
     margin: 20px 0;
 }
-.sobre aside a{
+main .sobre aside a{
     background: orangered;
     color: #ffffff;
     margin: 20px 0px;
@@ -298,7 +306,7 @@ main .home .container{
 }
 
 /*  -----------  Section Contatos  ----------  */
-.contatos{background: #ff0000;
+main .contatos{background: #00000032;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -306,16 +314,17 @@ main .home .container{
     width: 100%;
     padding: 110px 0 0 0;
 }
-.contatos .container{background-color: #239217;
+main .contatos .container{background-color: #23921700;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     width: 85%;
+    max-width: 1200px;
     height: 600px;
     padding: 0px 0;
 }
-.contatos article{ background-color: aqua;
+main .contatos .container article{ background-color: rgba(0, 255, 255, 0);
     display: flex;
     justify-content: center;
     align-items: flex-start; 
@@ -324,21 +333,30 @@ main .home .container{
     height: 90%;
 
 }
-.contatos h2{
+main .contatos .container .ctt-txt{background-color: rgba(255, 0, 0, 0);
+    width: 100%;
+}
+main .contatos .container .ctt-txt h2{
     font-size: 2rem;
     color: orangered;
 }
-.contatos article p{
+main .contatos .container .ctt-txt article p{
     margin: 20px 0;
     padding: 0px 0;
 }
-.contatos article a{
+main .contatos .container .ctt-txt article a{
     color: #000000;
     margin: 0px 0px;
     padding: 5px 1  px;
     border-radius: 10px;
 }
-.contatos .whatsapp {
+main .contatos .container .ctt-txt .whatsapp {background-color: rgba(255, 0, 0, 0);
+    padding: 50px 0;
+    width: 100%;
+    height: 200px;
+
+}
+main .contatos .container .ctt-txt .whatsapp a{
     width: 90%;
     margin: 20px 0;
     padding: 10px;
@@ -346,12 +364,12 @@ main .home .container{
     font-size: 30px;
     text-align: center;
     color: #fdfdfd;
-    border: rgb(255, 255, 255) solid 3px;
+    border: rgb(255, 255, 255) solid 2px;
 }
-.contatos .whatsapp:hover{
+main .contatos .container .ctt-txt .whatsapp:hover{
     background: #239217;
 }
-.contatos aside{ background-color: darkorange;
+main .contatos .container aside{ background-color: rgba(255, 140, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center; 
@@ -359,31 +377,72 @@ main .home .container{
     width: 50%;    
     height: 90%;
 }
-.contatos aside form{background-color: gray;
-    width: 300px;
-    
-    margin: 20px 0;
+main .contatos .container aside form{background-color: gray;
+    width: 90%;  
+    max-width: 500px;  
+    height: 90%;
+    padding: 20px;
+    border-radius: 10px;
 }
+main .contatos .container aside form .form-group{background-color: rgba(255, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 10px;
+}
+main .contatos .container aside form .form-group label{background-color: #28a71a00;
+    width: 100%;
+}
+main .contatos .container aside form .form-group input, select{
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.225);
+}
+main .contatos .container aside form .form-group textarea{
+    width: 100%;
+    height: 70px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.225);
+}
+main .contatos .container aside form button {background-color: orangered;
+    width: 100%;
+    padding: 30px 0;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.5rem;  
+    cursor: pointer; 
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.225);
+ 
+}
+main .contatos .container aside form button:hover{
+    background-color: rgb(222, 59, 0);
+    color: white;
+}
+
 /*  -----------  Section Mapa  ----------  */
-.localizacao{background-color: yellow;
+main .localizacao{background-color: yellow;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: auto;
 }
-.localizacao .container{background-color: #29A71A;
+main .localizacao .container{background-color: #29A71A;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
 }
-.localizacao .container iframe{
+main .localizacao .container iframe{
     width: 100%;
 }
-
-
 /*  -----------  Section Footer  ----------  */
 footer{
     display: flex;

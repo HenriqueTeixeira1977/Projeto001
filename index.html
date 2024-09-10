@@ -56,7 +56,9 @@
                     <h1>FRASE DE CHAMADA</h1>
                     <h2>Lorem ipsum dolor sit amet</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe a nulla quae? Officia at voluptas necessitatibus dolorem nam unde excepturi consequuntur assumenda eius odit. Quae, architecto? Fuga officia aliquid illum!</p>                
-                    <a href="#">Orçamento Grátis</a>
+                    <div class="button">
+                        <a href="#">Orçamento Grátis</a>
+                    </div>
                 </article>
                 <aside>
                     <!--  <img src="#" alt="imagem">  -->
@@ -108,34 +110,55 @@
         <section class="contatos" id="contatos">
             <div class="container">
                 <article>
-                    <h2>ENTRE EM CONTATO</h2>
-                    <p>Estamos esperando por seu contato!!!</p>
-                    <a href="#" class="email"><i class="fa-solid fa-envelope"></i> contato@dominiodaempresa.com.br</a>
-                    <a href="#" class="facebook"><i class="fa-brands fa-facebook"></i> Facebook/nomedaempresa</a>
-                    <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i> Instagram/nomedaempresa</a>
-                    <a href="#" class="whatsapp"><i class="fa-brands fa-whatsapp"></i> Fale Conosco Agora</a>
+                    <div class="ctt-txt">
+                        <h2>ENTRE EM CONTATO</h2>
+                        <p>Estamos esperando por seu contato!!!</p>
+
+                        <a href="#" class="email"><i class="fa-solid fa-envelope"></i> contato@dominiodaempresa.com.br</a><br>
+
+                        <a href="#" class="facebook"><i class="fa-brands fa-facebook"></i> Facebook/nomedaempresa</a><br>
+                        
+                        <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i> Instagram/nomedaempresa</a>
+                        
+                        <div class="whatsapp">
+                            <a href="#"><i class="fa-brands fa-whatsapp"></i> Fale Conosco Agora</a>
+                        </div>
+                    </div>
                 </article>
+
                 <aside>
+                    <h3>Lorem ipsum dolor sit amet</h3>
+
                     <form name="contact" method="POST" data-netlify="true">
-                        <p>
-                          <label>Your Name: <input type="text" name="name" /></label>
-                        </p>
-                        <p>
-                          <label>Your Email: <input type="email" name="email" /></label>
-                        </p>
-                        <p>
-                          <label>Your Role: <select name="role[]" multiple>
+
+                        <div class="form-group">
+                            <label>Your Name: </label>
+                            <input type="text" name="name" placeholder="Seu Nome" required />
+                        </div>     
+
+                        <div class="form-group">
+                          <label>Your Email:</label>
+                          <input type="email" name="email" placeholder="Seu Email" required />
+                        </div>
+
+                        <div class="form-group">
+                          <label>Your Role: </label>
+                          <select class="form-control" name="role" id="role" required>
                             <option value="leader">Leader</option>
                             <option value="follower">Follower</option>
-                          </select></label>
-                        </p>
-                        <p>
-                          <label>Message: <textarea name="message"></textarea></label>
-                        </p>
-                        <p>
-                          <button type="submit">Send</button>
-                        </p>
-                      </form>
+                          </select>
+                        </div>
+
+                        <div class="form-group">
+                          <label>Message: </label>
+                          <textarea name="message" placeholder="Escreva a sua menssagem" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                          <button type="submit">Enviar</button>                      </div>
+
+                    </form>
+
                 </aside>
             </div>            
         </section>

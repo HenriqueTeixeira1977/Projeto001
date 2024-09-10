@@ -306,7 +306,7 @@ main .sobre aside a{
 }
 
 /*  -----------  Section Contatos  ----------  */
-main .contatos{background: #00000032;
+main .contatos{background: #cacaca;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -365,8 +365,9 @@ main .contatos .container .ctt-txt .whatsapp a{
     text-align: center;
     color: #fdfdfd;
     border: rgb(255, 255, 255) solid 2px;
+    border-radius: 10px;
 }
-main .contatos .container .ctt-txt .whatsapp:hover{
+main .contatos .container .ctt-txt .whatsapp a:hover{
     background: #239217;
 }
 main .contatos .container aside{ background-color: rgba(255, 140, 0, 0);

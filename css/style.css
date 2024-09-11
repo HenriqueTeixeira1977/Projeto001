@@ -13,10 +13,10 @@
     transition: all .3s ease;
 }
 ::-webkit-scrollbar{
-    width: 5px;
+    width: 7px;
 }
 ::-webkit-scrollbar-track{
-    background: #bfbfbf;
+    background: #ffffff;
 }
 ::-webkit-scrollbar-track:hover{
     background: #ffffff85;
@@ -25,9 +25,17 @@
     background: orangered;
     border-radius: 20px;
 }
+@keyframes fadIn{
+    0%{
+        transform: scale(.0);
+        opacity: 0;
+    }
+}
+
 body{
     min-height: 100vh;
 }
+
 
 header{
     z-index: 999;
@@ -38,8 +46,8 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 7%;
-    transition: .3s;
+    padding: 10px 5%;
+    transition: .5s;
 }
 header .brand{
     color: orangered;
@@ -101,7 +109,7 @@ header.sticky .button:hover{
 
 /*  -----------  Section Home  ----------  */
 main .home{background: rgb(255, 0, 0);
-    background-image: linear-gradient(-45deg, rgba(255, 68, 0, 0.382) 10%, rgba(0, 0, 0, 0.842) 64%),url(../img/bg.jpg);
+    background-image: linear-gradient(-45deg, rgba(255, 68, 0, 0.116) 10%, rgba(0, 0, 0, 0.842) 64%),url(../img/bg.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -113,19 +121,17 @@ main .home{background: rgb(255, 0, 0);
     height: 100vh;
     margin: auto;
 }
-main .home .container{
-    background-color: rgba(0, 0, 0, 0);
+main .home .container{background-color: rgba(255, 6, 6, 0);
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
     width: 85%;
-    max-width: 1400px;
+    max-width: 1500px;
     height: 500px;
     margin: auto;
-    padding: 20px;
+    padding: 20px 0;
     border: rgba(255, 68, 0, 0) solid 3px;
-    border-radius: 10px;
 
 }
 main .home .container article { background: rgba(0, 0, 0, 0);
@@ -133,12 +139,14 @@ main .home .container article { background: rgba(0, 0, 0, 0);
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    width: 70%;
+    width: 85%;
     height: 100%;
     color: white;
+    animation:fadIn .4s linear backwards .4s;
+
 }
 main .home .container article h1{
-    font-size: 4.7rem;
+    font-size: 5vw;
     font-weight: 800;
     line-height: 0.7;
     color: orangered;
@@ -146,13 +154,16 @@ main .home .container article h1{
 }
 main .home .container article h2{
     font-size: 2rem;
+
 }
 main .home .container article h3{
     font-size: 3rem;
+
 }
 main .home .container article p{
     margin: 10px 0;
     font-size: 1.3rem;
+
 }
 main .home .container article .button{background: rgba(15, 11, 10, 0);
     color: #ffffff;
@@ -171,8 +182,8 @@ main .home .container article a{
 main .home .container article a:hover{
     background-color: rgb(208, 55, 0);
 }
-main .home .container aside {background:rgba(255, 68, 0, 0);
-    display: flex;
+main .home .container aside {background:rgb(255, 68, 0);
+    display: none;
     justify-content: center;
     align-items: center;
     width: 50%;

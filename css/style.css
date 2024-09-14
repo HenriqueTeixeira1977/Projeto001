@@ -108,7 +108,7 @@ header.sticky .button:hover{
 }
 
 /*  -----------  Section Home  ----------  */
-main .home{background: rgb(255, 0, 0);
+main .home{/*background: rgb(255, 0, 0);*/
     background-image: linear-gradient(-45deg, rgba(255, 68, 0, 0.116) 10%, rgba(0, 0, 0, 0.842) 64%),url(../img/bg.jpg);
     background-size: cover;
     background-position: center;
@@ -139,10 +139,10 @@ main .home .container article { background: rgba(0, 0, 0, 0);
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    width: 85%;
+    width: 70%;
     height: 100%;
     color: white;
-    animation:fadIn .4s linear backwards .4s;
+    animation:fadIn .9s linear backwards .9s;
 
 }
 main .home .container article h1{

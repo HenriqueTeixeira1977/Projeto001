@@ -198,13 +198,13 @@
     }
 
 /*  -----------  Section Contatos  ----------  */
-    main .contatos{background-color: rgba(127, 255, 212, 0);
+    main .contatos{background-color: rgba(127, 255, 212, 0.944);
         display: flex;
         justify-content: center;
         align-items: flex-start;
         height: 1250px;
     }
-    main .contatos .container{background-color: rgba(137, 43, 226, 0);
+    main .contatos .container{background-color: rgb(137, 43, 226);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -212,15 +212,14 @@
         width: 95%;
         text-align: center;
     }
-    main .contatos .container article{ background-color: rgba(51, 0, 255, 0);
+    main .contatos .container article{ background-color: rgba(51, 0, 255, 0.947);
         display: flex;
         justify-content: center;
         align-items: center;
         margin: auto;
         width: 90%;
     }
-    main .contatos .container article .ctt-txt{background-color: rgba(204, 255, 0, 0);
-        height: 98%;
+    main .contatos .container article .ctt-txt{background-color: rgb(204, 255, 0);
         padding: 20px;
         text-align: left;
     }
@@ -237,8 +236,9 @@
         padding: 15px 50px;
         font-size: 1rem;color: white;
     }
-    main .contatos aside{background-color: rgba(255, 0, 0, 0);
+    main .contatos aside{background-color: rgb(255, 0, 0);
         width: 100%;
+        height: 100%;
         margin: 20px 0;
     } 
     

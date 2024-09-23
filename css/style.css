@@ -37,7 +37,7 @@ body{
 }
 
 
-header{
+header{background-color: rgba(172, 255, 47, 0);
     z-index: 999;
     position: fixed;
     top: 0;
@@ -46,7 +46,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 5%;
+    padding: 50px 5%;
     transition: .5s;
 }
 header .brand{

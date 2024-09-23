@@ -2,6 +2,12 @@
 
 @media screen and (min-width: 0px) and (max-width: 1023px){
 /*  ----------  Section Header  ---------- */ 
+    header{background-color: rgba(255, 0, 0, 0);
+        padding: 15px;
+    }
+    header .brand{
+        font-size: 1.1rem;
+    }
     header .btn {
         display: block;
         color: white;
@@ -33,8 +39,8 @@
         left: 87%;
         margin: 15px 0px 0px 0px;
         padding: 10px 12px;
-        background-color: black;
-        border: orangered solid 1px;
+        background-color: orangered;
+        border: black solid 1px;
         border-radius: 7px;
     }
     header nav a{
@@ -53,6 +59,9 @@
     header .button {
         display: none;
     }    
+    header.sticky .btn{
+        color: #000000;
+    }
 
 /*  ----------  Section Main Home  ---------- */ 
     main .home {
@@ -198,49 +207,77 @@
     }
 
 /*  -----------  Section Contatos  ----------  */
-    main .contatos{background-color: rgba(127, 255, 212, 0.944);
+    main .contatos{background-color: rgba(255, 178, 127, 0.099);
         display: flex;
         justify-content: center;
         align-items: flex-start;
-        height: 1250px;
+        padding-top: 20px;
     }
-    main .contatos .container{background-color: rgb(137, 43, 226);
+    main .contatos .container{background-color: rgba(137, 43, 226, 0);
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        padding: 100px 0;
         width: 95%;
         text-align: center;
     }
-    main .contatos .container article{ background-color: rgba(51, 0, 255, 0.947);
+    main .contatos .container article{ background-color: rgba(255, 251, 0, 0);
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         margin: auto;
-        width: 90%;
+        padding: 10px;
+        height: 50%;
+        width: 98%;        
     }
-    main .contatos .container article .ctt-txt{background-color: rgb(204, 255, 0);
-        padding: 20px;
+    main .contatos .container article .ctt-txt{background-color: rgba(204, 255, 0, 0);
         text-align: left;
     }
     main .contatos .container article p{
         padding: 0px 0;
     }
-    main .contatos .container .whatsapp {background-color: rgba(255, 0, 0, 0);
+    main .contatos .container .ctt-txt .whatsapp {background-color: rgba(21, 0, 255, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 100%;
-        padding: 20px 0%;
-        font-size: 1rem;border: none;
+        height: 100px;
+        padding: 50px 0%;
     }
-    main .contatos .container .whatsapp a{background-color: green;
+    main .contatos .container .ctt-txt .whatsapp a{background-color: green;
         width: 100%;
         padding: 15px 50px;
-        font-size: 1rem;color: white;
+        font-size: 1rem;
+        color: white;
     }
-    main .contatos aside{background-color: rgb(255, 0, 0);
+    main .contatos .container aside{background-color: rgba(254, 254, 254, 0);
         width: 100%;
         height: 100%;
-        margin: 20px 0;
     } 
+
+    main .contatos .container aside form{background-color: rgb(111, 111, 111);
+        width: 97%;  
+        max-width: 500px;  
+        height:450px;
+        padding: 0 10px;
+        border-radius: 10px;
+    }
+    main .contatos .container aside form .form-group label{background-color: #28a71a00;
+        width: 100%;
+        text-align: left;
+    }
+    main .contatos .container aside form button {background-color: orangered;
+        width: 100%;
+        padding: 10px 0;
+        border-radius: 10px;
+        border: none;
+        font-size: 1.5rem;  
+        cursor: pointer; 
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.225);     
+    }
     
 /*  -----------  Section Footer  ----------  */
     footer {

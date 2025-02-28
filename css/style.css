@@ -255,38 +255,6 @@ main .solucoes .container .box a {
     border-radius: 10px;
 }
 
-
-.vers-del-dia{background-color: #000000;
-    margin: 0;
-    padding: 0px;
-    height: 10000px;
-
-    text-align: center;
-    font-size: 2rem;
-    color: orangered;
-}
-.vers-del-dia .barra{background-color: rgba(255, 0, 0, 0);
-    width: 100%;
-    height: 250px;
-    margin: 0;
-    padding: 0;
-}
-.vers-del-dia .barra iframe {
-    width: 100%;
-    height: 25vh;
-}
-.biblia-online{background-color: #239217;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10PX;
-}
-.biblia-online .box{background-color: red;
-    width: 50%;
-    padding: 10px;
-}
-
-
 /*  -----------  Section Sobre  ----------  */
 main .sobre{background-color: #23921700;
     display: flex;
@@ -504,4 +472,80 @@ footer a {
 }
 footer a:hover {
     color: rgba(255, 68, 0, 0.774);
+}
+
+.devocional{background-color: #efefef;
+    margin: auto;
+    padding: 0px;
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(177, 177, 177);
+}
+.devocional .title{background-color: #23921700;
+    padding: 100px 0px 30px 0px;    
+}
+.devocional .title h3{background-color: rgba(255, 0, 0, 0);
+    width: 75%;
+    margin: auto;
+    font-size: 3rem;
+    font-weight: 200;
+    color: black;
+}
+.devocional .title p{background-color: rgba(255, 0, 0, 0);
+    width: 75%;
+    margin: auto;
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: black;
+}
+
+.devocional .row-one .box{background-color: rgb(27, 27, 27);
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+.devocional .row-one .box iframe {
+    width: 750px;
+    height: 100%;
+}
+
+.devocional .row-two{background-color: rgba(255, 0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    height: inherit;
+    margin: auto;
+    padding: 50px 0px;
+}
+.devocional .row-two .box{background-color: rgb(250, 250, 250);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    max-width: 500px;
+    height: 500px;
+    margin: 10px;
+    padding: 0 50px;
+    border-radius: 10px;
+}
+
+.devocional .row-four{background-color: #239217;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0PX;
+    width: 100%;
+    height: 100vh;
+
+}
+.devocional .row-four .box{background-color: rgb(255, 0, 0);
+    width: 100%;
+    height: 100vh;
+    padding: 0px;
+}
+.devocional .row-four .box iframe{
+    height: inherit;
 }

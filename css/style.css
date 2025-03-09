@@ -510,15 +510,11 @@ footer a:hover {
     color: black;
 }
 
-.devocional .row-one .box{background-color: rgb(27, 27, 27);
+.devocional .row-one .box{background-color: rgb(0, 0, 0);
     width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 0;
 }
 .devocional .row-one .box iframe {
-    width: 750px;
-    height: 100%;
+    width: 100%
 }
 
 .devocional .row-two{background-color: rgba(255, 0, 0, 0);

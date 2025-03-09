@@ -75,6 +75,11 @@ header .btn{
     cursor: pointer;
     display: none;
 }
+
+nav .menu .dropdown .btn{
+    background-color: red;
+    display: block;
+}
 header.sticky{
     background: #ffffff;
     padding: 5px 7%;
@@ -106,6 +111,7 @@ header.sticky .button{
 header.sticky .button:hover{
     color: #ffffff;
 }
+
 
 /*  -----------  Section Home  ----------  */
 main .home{/*background: rgb(255, 0, 0);*/

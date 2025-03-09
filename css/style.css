@@ -211,7 +211,7 @@ main .solucoes{
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: 100vh;
+    padding-top: 150px;
 }
 main .solucoes h2{
     margin: 100px 0 50px 0;
@@ -267,8 +267,7 @@ main .sobre{background-color: #23921700;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh;
-    padding: 100px 0 0 0;
+    padding-top: 100px;
 }
 main .sobre h2{
     margin: 0 0 0 0;
@@ -323,13 +322,13 @@ main .sobre aside a{
 }
 
 /*  -----------  Section Contatos  ----------  */
-main .contatos{background: #cacaca;
+main .contatos{background: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     width: 100%;
-    padding: 110px 0 0 0;
+    padding-top: 100px;
 }
 main .contatos .container{background-color: #23921700;
     display: flex;
@@ -348,7 +347,6 @@ main .contatos .container article{ background-color: rgba(0, 255, 255, 0);
     flex-direction: column;
     width: 50%;    
     height: 90%;
-
 }
 main .contatos .container .ctt-txt{background-color: rgba(255, 0, 0, 0);
     width: 100%;
@@ -444,14 +442,21 @@ main .contatos .container aside form button:hover{
 }
 
 /*  -----------  Section Mapa  ----------  */
-main .localizacao{background-color: yellow;
+main .localizacao{background-color: rgba(255, 255, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: 100%;
     height: auto;
+    padding-top: 100px;
 }
-main .localizacao .container{background-color: #29A71A;
+main .loc-txt{background-color: #23921700;
+    width: 100%;
+    padding: 0 0 50px 0;
+    text-align: center;
+}
+main .localizacao .container{background-color: #28a71a00;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -480,7 +485,7 @@ footer a:hover {
     color: rgba(255, 68, 0, 0.774);
 }
 
-.devocional{background-color: #efefef;
+.devocional{background-color: #ffffff;
     margin: auto;
     padding: 0px;
     text-align: center;
@@ -530,9 +535,7 @@ footer a:hover {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 50%;
-    max-width: 500px;
-    height: 500px;
+    width: 100%;
     margin: 10px;
     padding: 0 50px;
     border-radius: 10px;
